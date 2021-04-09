@@ -1,5 +1,7 @@
 #include "Telewizor.h"
 
+int Telewizor::ID = 0;
+
 bool Telewizor::getStan()
 {
     return wlaczony;
@@ -23,4 +25,9 @@ void Telewizor::wylacz()
 void Telewizor::wlacz()
 {
     wlaczony = true;
+}
+
+int Telewizor::getId()
+{
+    return indeks;
 }

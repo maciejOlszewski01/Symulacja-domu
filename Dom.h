@@ -16,6 +16,10 @@ public:
 	Drzwi* tabDrzwi;
 	Telewizor* tabTelewizor;
 
+	int getDlugoscTelewizory();
+	int getDlugoscDrzwi();
+	int getDlugoscRolety();
+
 
 	Dom(int a,int b, int c) {
 		tabRolety = new Rolety[a];

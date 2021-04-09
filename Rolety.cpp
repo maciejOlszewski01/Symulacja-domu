@@ -28,3 +28,7 @@ int Rolety::getId()
 {
 	return id;
 }
+
+Rolety::~Rolety()
+{
+}

@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Rolety.h"
 #include "Dom.h"
+#include "Drzwi.h"
+#include "Telewizor.h"
 int main() {
 	
 
@@ -16,7 +18,7 @@ int main() {
 
 
 	while (aktywnoœæ) {
-		std::cout << "Wybierz obiekt na ktorym chcesz dzia³aæ. \n 1 - rolety \n 2 - Drzwi \n 3 - Telewizory \n By zakoñczyæ program wciœnij 4";
+		std::cout << "Wybierz obiekt na ktorym chcesz dzia³aæ. \n 1 - rolety \n 2 - Drzwi \n 3 - Telewizory \n By zakoñczyæ program wciœnij 4 \n By wyœwitliæ stan domu wciœnij 5\n";
 		std::cin >> wybranyTypObiektu;
 		std::cout << "Na którym obiekcie chcesz dzia³aæ:";
 		if (wybranyTypObiektu == 4) {
@@ -71,9 +73,9 @@ int main() {
 			std::cout << "Dziêkujemy za korzystanie z naszego programu";
 			break;
 		default:
+			domeczek.stanDom();
 			break;
 		}
-
 	}
 
 

@@ -9,8 +9,8 @@ private:
 	Stan stan;
 	int id;
 
-	static int ID;
 public:
+	static int ID;
 	void Zamknij();
 	void Otworz();
 	void Wlamanie();

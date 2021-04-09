@@ -4,18 +4,17 @@
 class Rolety
 {
 	private:
-
-	public:
-
 		Stan stan;
 		int id;
-
+		
+	public:
 		static int ID;
 		void Zamknij();
 		void Otworz();
 		void Wlamanie();
 		Stan getStan();
 		int getId();
+		~Rolety();
 		Rolety(Stan x) {
 			x = stan;
 			id = ID;
