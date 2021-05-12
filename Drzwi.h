@@ -9,6 +9,10 @@ class Drzwi : public Wejscia
 {
 
 public:
+
+	virtual void Zamknij();
+	virtual void Otworz();
+
 	Drzwi(Stan x) {
 		x = stan;
 		id = ID;

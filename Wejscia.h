@@ -9,8 +9,8 @@ protected:
 public:
 	static int ID;
 
-	void Zamknij();
-	void Otworz();
+	virtual void Zamknij();
+	virtual void Otworz();
 	void Wlamanie();
 	Stan getStan();
 	int getId();
