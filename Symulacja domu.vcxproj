@@ -143,6 +143,7 @@
     <ClCompile Include="Drzwi.cpp" />
     <ClCompile Include="Rolety.cpp" />
     <ClCompile Include="Telewizor.cpp" />
+    <ClCompile Include="Wejscia.cpp" />
     <ClCompile Include="Źródło.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +152,7 @@
     <ClInclude Include="Rolety.h" />
     <ClInclude Include="Stan.h" />
     <ClInclude Include="Telewizor.h" />
+    <ClInclude Include="Wejscia.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

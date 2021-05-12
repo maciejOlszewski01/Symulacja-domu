@@ -1,20 +1,12 @@
 #pragma once
 #include "Stan.h"
+#include "Wejscia.h"
 
-class Rolety
+class Rolety : public Wejscia
 {
 	private:
-		Stan stan;
-		int id;
-		
 	public:
-		static int ID;
-		void Zamknij();
-		void Otworz();
-		void Wlamanie();
-		Stan getStan();
-		int getId();
-		~Rolety();
+
 		Rolety(Stan x) {
 			x = stan;
 			id = ID;

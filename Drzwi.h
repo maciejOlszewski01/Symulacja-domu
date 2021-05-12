@@ -1,21 +1,14 @@
 
 #include "Stan.h"
+#include "Wejscia.h"
 #pragma once
 
 
-class Drzwi
+
+class Drzwi : public Wejscia
 {
-private:
-	Stan stan;
-	int id;
 
 public:
-	static int ID;
-	void Zamknij();
-	void Otworz();
-	void Wlamanie();
-	Stan getStan();
-	int getId();
 	Drzwi(Stan x) {
 		x = stan;
 		id = ID;

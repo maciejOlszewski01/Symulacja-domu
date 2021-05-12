@@ -12,6 +12,7 @@ private:
 
 public:
 
+
 	Rolety* tabRolety;
 	Drzwi* tabDrzwi;
 	Telewizor* tabTelewizor;
@@ -32,7 +33,34 @@ public:
 
 	}
 
+	Dom(const Dom & kopiowany) {
+		this->dlugoscDrzwi = kopiowany.dlugoscDrzwi;
+		this->dlugoscRolety = kopiowany.dlugoscRolety;
+		this->dlugoscTelewizory = kopiowany.dlugoscTelewizory;
+
+		this->tabRolety = new Rolety(*(kopiowany.tabRolety));
+		this->tabDrzwi = new Drzwi(*(kopiowany.tabDrzwi));
+		this->tabTelewizor = new Telewizor(*(kopiowany.tabTelewizor));
+	}
+
+
 	void stanDom();
+
+	~Dom() {
+		delete[] tabRolety;
+		delete[] tabDrzwi;
+		delete[] tabTelewizor;
+	}
+
+	bool operator==(const Dom & d) {
+		if (this->dlugoscDrzwi == d.dlugoscDrzwi && this->dlugoscRolety == d.dlugoscRolety && this->dlugoscTelewizory == d.dlugoscTelewizory) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
 
 };
 

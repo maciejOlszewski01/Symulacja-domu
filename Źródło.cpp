@@ -4,8 +4,17 @@
 #include "Drzwi.h"
 #include "Telewizor.h"
 int main() {
-	
 
+	/*
+	Dom domeczek = Dom(4, 4, 4);
+	Dom domeczek2 = Dom(domeczek);
+
+	std::cout << (domeczek == domeczek2);
+	*/
+
+
+	
+	
 	std::cout << "Witaj w inteligentnym domu.\n Stwórz pierwszy dom. Podaj iloœæ rolet drzwi i telewizorów";
 	int a, b, c, wybranyObiekt, wybranyTypObiektu, akcja;
 	std::cin >> a;
@@ -77,9 +86,9 @@ int main() {
 			break;
 		}
 	}
+	
 
-
-
+	
 
 
 
